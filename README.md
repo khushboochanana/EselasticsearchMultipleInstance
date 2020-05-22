@@ -1,6 +1,12 @@
 
 # ELASTICSEARCH  7.X Multiple Instance setup.
              
+ In windows run following command
+ 
+         elasticConfig 4 qa
+         
+ number of instance = 4 environment = qa
+          
             
 # Multiple Instance via elasticsearch ZIP
 ```
