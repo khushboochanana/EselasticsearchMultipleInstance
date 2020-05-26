@@ -1,5 +1,4 @@
-
-
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.7.0-windows-x86_64.zip -O elasticserch.zip
 mkdir elasticsearch
 tar -xf elasticserch.zip -C elasticsearch --strip-components 1
 mkdir config
