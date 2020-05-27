@@ -16,7 +16,7 @@ FOR /L %%A IN (1, 1, %clusterCount%) DO (
  xcopy elasticsearch\config\*.* config\cluster-%env%-%%A /h /i /c /k /e /r /y
 
  echo node.name: cluster-node-%env%-%%A >> config\cluster-%env%-%%A\elasticsearch.yml
- echo cluster.name: cluster-%env%-%%A >> config\cluster-%env%-%%A\elasticsearch.yml
+ echo cluster.name: cluster-%env% >> config\cluster-%env%-%%A\elasticsearch.yml
  echo path.data: %CD%\data\cluster-%env%-%%A >> config\cluster-%env%-%%A\elasticsearch.yml
  echo path.logs: %CD%\data\cluster-%env%-%%A >> config\cluster-%env%-%%A\elasticsearch.yml
  echo http.port: 920%%A >> config\cluster-%env%-%%A\elasticsearch.yml
